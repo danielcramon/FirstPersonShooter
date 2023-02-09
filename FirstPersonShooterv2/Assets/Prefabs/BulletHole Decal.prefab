@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5782261566102571741}
   - component: {fileID: 7617647185973428469}
+  - component: {fileID: 2989698593952508535}
   m_Layer: 0
   m_Name: BulletHole Decal
   m_TagString: Untagged
@@ -58,3 +59,15 @@ MonoBehaviour:
   m_Size: {x: 0.25, y: 0.25, z: 1}
   m_FadeFactor: 1
   m_Version: 2
+--- !u!114 &2989698593952508535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993096153177360659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c5d17785be955b4b942f6ac45c891df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

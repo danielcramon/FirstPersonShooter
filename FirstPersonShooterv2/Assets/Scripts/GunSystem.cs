@@ -11,9 +11,11 @@ public class GunSystem : MonoBehaviour
     public int magazineSize, bulletsPerTap;
     public bool allowButtonHold;
     int bulletsLeft, bulletsShot;
+    public int scopeRange;
 
     //bools
     bool shooting, readyToShoot, reloading;
+    public bool hasScope;
 
     //Reference
     public Camera fpsCam;
@@ -63,6 +65,16 @@ public class GunSystem : MonoBehaviour
 
     private void MyInput()
     {
+        if (hasScope && Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            fpsCam.fieldOfView = fpsCam.fieldOfView - scopeRange;
+            mls.mouseSensitivity = 1;
+        }
+        if(hasScope && Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            fpsCam.fieldOfView = fpsCam.fieldOfView + scopeRange;
+            mls.mouseSensitivity = 5;
+        }
         if (allowButtonHold) 
         { 
             shooting = Input.GetKey(KeyCode.Mouse0);

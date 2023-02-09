@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{97E548C5-6889-ED76-16F8-08E730675049}</ProjectGuid>
+    <ProjectGuid>{8610A25F-E722-F507-BFB7-4AC0EFF43E20}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -75,6 +75,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\CustomBullets.cs" />
     <Compile Include="Assets\Scripts\PickUpController.cs" />
+    <Compile Include="Assets\Scripts\Destoryer.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
@@ -131,6 +132,7 @@
     <None Include="Assets\MentalDreamsAssets\SoldierSoundsPack\ReadMe!.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
@@ -921,19 +923,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{59AD910F-E130-88BC-6638-9BCA4B3C376F}</Project>
+      <Project>{22041701-630C-2E74-2381-C5BF702F4E2D}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{32447640-88BA-140F-8489-A31FB1531E16}</Project>
+      <Project>{8598992A-8DD0-9911-935E-AE9F1263B3BF}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{073794CE-40A0-B0C5-F81E-97A289341C56}</Project>
+      <Project>{8903E1A9-3324-6983-58F0-F8B171FCD2F4}</Project>
       <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{117D99AB-A77C-E733-AEBA-E1225BDF2932}</Project>
+      <Project>{919CDC68-0543-5A6C-2D76-03CF52ECEF45}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
   </ItemGroup>

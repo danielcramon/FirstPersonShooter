@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1EF460BA-DE9A-E40A-0FE2-14BF1E5EEDB8}</ProjectGuid>
+    <ProjectGuid>{AA68FFDD-1C1C-37A8-7B23-CB1914E00434}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NavMeshComponentsTestsPlaymode</AssemblyName>
@@ -696,7 +696,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{59AD910F-E130-88BC-6638-9BCA4B3C376F}</Project>
+      <Project>{22041701-630C-2E74-2381-C5BF702F4E2D}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>

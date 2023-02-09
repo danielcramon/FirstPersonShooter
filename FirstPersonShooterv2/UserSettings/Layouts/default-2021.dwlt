@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 133
+  controlID: 57
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 134
+  controlID: 139
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 573
     height: 1307
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c262c1329a02fa49b5cb4c297106f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 133, y: 30}
+  m_MinSize: {x: 129, y: 28}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: ProBuilder
@@ -691,9 +691,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 116.0569, y: -34.202553, z: 107.35301}
+    m_Target: {x: 94.966965, y: 0.6419515, z: 157.42975}
     speed: 2
-    m_Value: {x: 116.0569, y: -34.202553, z: 107.35301}
+    m_Value: {x: 94.966965, y: 0.6419515, z: 157.42975}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -740,13 +740,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.05510326, y: 0.9365364, z: -0.30679566, w: 0.16361916}
+    m_Target: {x: 0.039078493, y: 0.95527846, z: -0.25463507, w: 0.14893067}
     speed: 2
-    m_Value: {x: 0.055074867, y: 0.93605375, z: -0.30663756, w: 0.16353485}
+    m_Value: {x: 0.038834114, y: 0.95513254, z: -0.2530622, w: 0.14890686}
   m_Size:
-    m_Target: 36.11431
+    m_Target: 1.8035877
     speed: 2
-    m_Value: 36.11431
+    m_Value: 1.803591
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -803,23 +803,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b0faffff
-      m_LastClickedID: -1360
-      m_ExpandedIDs: 92f8ffffaaf8ffffb4faffffccfaffffcefaffffdafaffffeefaffff06fbffff08fbffff
+      m_SelectedIDs: 6af8ffff
+      m_LastClickedID: -1942
+      m_ExpandedIDs: 08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: SniperGun
+        m_OriginalName: SniperGun
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -1942
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -871,22 +871,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/SkySeries Freebie/FreebieHdri
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/SkySeries Freebie/FreebieHdri
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\45226\Documents\GitHub\First PersonShooter v2
+  m_LastProjectPath: C:\Users\45226\Documents\GitHub\FirstPersonShooter\FirstPersonShooterv2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 187d0000
-    m_LastClickedID: 32024
-    m_ExpandedIDs: 00000000d87c0000da7c0000dc7c0000de7c0000e07c0000e27c0000e47c0000e87c0000ec7d000000ca9a3b
+    m_SelectedIDs: 8e7d0000
+    m_LastClickedID: 32142
+    m_ExpandedIDs: 000000002e7d0000307d0000327d0000347d0000367d0000387d00003a7d00003c7d00003e7d0000407d0000427d0000447d0000467d0000867d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -914,7 +914,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d87c0000da7c0000dc7c0000de7c0000e07c0000e27c0000e47c0000e67c0000e87c0000ea7c0000
+    m_ExpandedIDs: 000000002e7d0000307d0000327d0000347d0000367d0000387d00003a7d00003c7d00003e7d0000407d0000427d0000447d0000467d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -958,7 +958,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
