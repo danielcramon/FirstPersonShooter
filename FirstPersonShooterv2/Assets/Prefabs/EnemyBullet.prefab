@@ -135,7 +135,7 @@ MonoBehaviour:
     m_Bits: 64
   bounciness: 0.8
   useGravity: 0
-  explosionRange: 4
+  explosionRange: 0.1
   maxLifetime: 4
   bulletHoleGraphic: {fileID: 1993096153177360659, guid: e89e98f290440a64c89603a0d04c0165,
     type: 3}

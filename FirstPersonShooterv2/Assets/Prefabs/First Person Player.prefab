@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 6037695354565749276}
   - component: {fileID: 6037695354565749265}
   - component: {fileID: 6037695354565749266}
-  m_Layer: 0
+  - component: {fileID: 7319516969211879019}
+  - component: {fileID: 7576169546544726348}
+  m_Layer: 6
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,6 +85,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7319516969211879019
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037695354565749277}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.6
+  m_Height: 2.3
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &7576169546544726348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037695354565749277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facac5c569ddd214499e9db46bdf2d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 200
+  health: {fileID: 0}
 --- !u!1 &6037695354912985627
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +125,7 @@ GameObject:
   - component: {fileID: 6037695354229290904}
   - component: {fileID: 6037695354229290910}
   - component: {fileID: 6037695354229290911}
-  - component: {fileID: 1646797883}
+  - component: {fileID: 2009105744}
   m_Layer: 6
   m_Name: First Person Player
   m_TagString: Fighter
@@ -160,21 +191,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   jumpSound: {fileID: 871623932}
---- !u!114 &1646797883
-MonoBehaviour:
+--- !u!208 &2009105744
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6037695354912985627}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: facac5c569ddd214499e9db46bdf2d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 200
-  health: {fileID: 0}
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.6, y: 1.9, z: 0.6}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6037695354999812626
 GameObject:
   m_ObjectHideFlags: 0

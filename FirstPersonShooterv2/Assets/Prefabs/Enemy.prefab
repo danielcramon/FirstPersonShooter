@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2970111795615424573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8867153833137340702}
+  m_Layer: 7
+  m_Name: StrafeLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8867153833137340702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970111795615424573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6426921804905046569}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4681759244132935095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2628107570292831026}
+  m_Layer: 7
+  m_Name: StrafeRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2628107570292831026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4681759244132935095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6426921804905046569}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6426921804905046574
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,6 +96,8 @@ Transform:
   - {fileID: 6426921805225474484}
   - {fileID: 6426921806676329631}
   - {fileID: 6826254349581077172}
+  - {fileID: 2628107570292831026}
+  - {fileID: 8867153833137340702}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -53,22 +117,32 @@ MonoBehaviour:
   maxHealth: 150
   agent: {fileID: 6426921804905046571}
   player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 64
-  walkPointRange: 10
-  timeBetweenAttacks: 0.5
+  moveSpots: []
+  randomSpot: 0
+  startWaitTime: 1
+  distToPlayer: 5
+  t_minStrafe: 0.01
+  t_maxStrafe: 0.05
+  strafeRight: {fileID: 2628107570292831026}
+  strafeLeft: {fileID: 8867153833137340702}
+  playerIsInLOS: 0
+  fieldOfViewAngle: 160
+  losRadius: 45
+  memoryStartTime: 10
+  shootNoiseTravelDistance: 100
+  jumpNoiseTravelDistance: 50
+  spinSpeed: 3
+  spinTime: 3
+  chaseRadius: 100
+  facePlayerFactor: 20
+  shootRadius: 50
+  timeBetweenAttacks: 1
   bullet: {fileID: 8859026674619620681, guid: 0f924a7bb4fe4f443be253a620328717, type: 3}
   attackPoint: {fileID: 6426921806676329631}
   spread: 0.1
   damage: 45
   shootForce: 80
   fireSound: {fileID: 4713556872905031448}
-  sightRange: 30
-  attackRange: 20
 --- !u!195 &6426921804905046571
 NavMeshAgent:
   m_ObjectHideFlags: 0

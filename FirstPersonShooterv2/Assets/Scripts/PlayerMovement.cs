@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             jumpSound.Play();
+            Debug.Log(GameManager.instance.player.transform.position);
 
         }
 

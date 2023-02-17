@@ -22,7 +22,10 @@ public class Player : Fighter
 
     private void SetText()
     {
-        health.text = currentHealth + " / " + maxHealth;
+        if(health != null)
+        {
+            health.text = currentHealth + " / " + maxHealth;
+        }
     }
 
     protected override void Update()

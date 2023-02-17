@@ -300,6 +300,8 @@ MonoBehaviour:
   magazineSize: 30
   bulletsPerTap: 3
   allowButtonHold: 0
+  scopeRange: 0
+  hasScope: 0
   fpsCam: {fileID: 0}
   attackPoint: {fileID: 6834750864749940824}
   whatIsEnemy:
@@ -340,8 +342,8 @@ MonoBehaviour:
   gunContainer: {fileID: 0}
   fpsCam: {fileID: 0}
   pickUpRange: 4
-  dropForwardForce: 10
-  dropUpwardForce: 5
+  dropForwardForce: 15
+  dropUpwardForce: 7
   equipped: 0
 --- !u!82 &1866469868
 AudioSource:
