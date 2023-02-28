@@ -25,6 +25,7 @@ public class GunSystem : MonoBehaviour
     public Transform playerTransform;
     public AudioSource reloadSound;
     public AudioSource fireSound;
+    public Animator anim;
 
     //Graphics
     public GameObject muzzleFlash, bullet;
@@ -44,6 +45,10 @@ public class GunSystem : MonoBehaviour
     public float maxRecoilTime;
     public MouseLook mls;
 
+    //Animation
+    public float maxShootTime = 0.1f;
+    private float timeSinceLastShot;
+
     private void Start()
     {
         bulletsLeft = magazineSize;
@@ -53,14 +58,25 @@ public class GunSystem : MonoBehaviour
         playerTransform = GameManager.instance.player.transform;
         text = GameManager.instance.bulletText;
         mls = GameManager.instance.mouseLookScript;
+        anim = GameManager.instance.anim;
     }
 
     private void Update()
     {
+        if(timeSinceLastShot <= 0)
+        {
+            anim.SetBool("isShooting", false);
+        }
+        else
+        {
+            anim.SetBool("isShooting", true);
+        }
         MyInput();
         if(text != null){
             text.SetText(bulletsLeft/bulletsPerTap + " / " + magazineSize/bulletsPerTap);
         }
+
+        timeSinceLastShot -= Time.deltaTime;
     }
 
     private void MyInput()
@@ -88,12 +104,14 @@ public class GunSystem : MonoBehaviour
         {
             Reload();
             reloadSound.Play();
+            anim.SetTrigger("Reload");
         }
 
         if(readyToShoot && shooting && !reloading && bulletsLeft <= 0)
         {
             Reload();
             reloadSound.Play();
+            anim.SetTrigger("Reload");
         }
 
         //shoot
@@ -103,6 +121,7 @@ public class GunSystem : MonoBehaviour
             Shoot();
             timePressed += Time.deltaTime;
             timePressed = timePressed >= maxRecoilTime ? maxRecoilTime : timePressed;
+            timeSinceLastShot = maxShootTime;
         }
         else
         {
@@ -191,6 +210,7 @@ public class GunSystem : MonoBehaviour
         {
             Invoke("Shoot", timeBetweenShots);
         }
+
     }
 
     private void ResetShot()

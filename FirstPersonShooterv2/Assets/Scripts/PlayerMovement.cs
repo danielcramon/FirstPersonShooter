@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     public AudioSource jumpSound;
+    public Animator anim;
 
     Vector3 velocity;
     bool isGrounded;
@@ -40,12 +41,14 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             jumpSound.Play();
-            Debug.Log(GameManager.instance.player.transform.position);
 
         }
 
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        //anim.SetBool("isGrounded", isGrounded);
+        //anim.SetFloat("speed", (Mathf.Abs(Input.GetAxis("Vertical") + Mathf.Abs(Input.GetAxis("Horizontal")))));
     }
 }

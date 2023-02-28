@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public Transform gunContainer;
     public TextMeshProUGUI bulletText;
     public Transform[] moveSpots;
+    public Animator anim;
 
     public Transform[] PlayerSpawnPoints;
     public Transform[] EnemySpawnPoints;
@@ -40,7 +41,6 @@ public class GameManager : MonoBehaviour
     {
         int random = Random.Range(0, PlayerSpawnPoints.Length);
         player.transform.position = PlayerSpawnPoints[random].position;
-        Debug.Log(player.transform.position);
     }
 
     public void SpawnAI(Enemy enemy)
